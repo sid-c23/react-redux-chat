@@ -10,8 +10,8 @@ class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-light bg-light">
-                <a href="#" className="navbar-brand">Navbar</a>
-                <span className="btn btn-primary" onClick={this.openChatWindow.bind(this)}>Notifications <span className="badge badge-light">4</span> </span>
+                <a href="#" className="navbar-brand">React Redux Chat Tutorial</a>
+                <span className="btn btn-primary" onClick={this.openChatWindow.bind(this)}>Notifications <span className="badge badge-light">{this.props.numNotifications}</span> </span>
             </nav>
         )
     }
